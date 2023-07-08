@@ -2,7 +2,171 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row grid intro-banner-group pt-1 appear-animate">
+    <div class="grid-item grid-item1 intro-slide-wrapper col-lg-8 height-x3">
+        <div class="swiper-container swiper-theme pg-inner pg-white animation-slider h-100 br-sm"
+             data-swiper-options="{
+                                'spaceBetween': 0,
+                                'slidesPerView': 1,
+                                'autoplay': {
+                                    'delay': 8000,
+                                    'disableOnInteraction': false
+                                }
+                            }">
+            <div class="swiper-wrapper row gutter-no cols-1">
+                <div class="swiper-slide banner banner-fixed intro-slide intro-slide1 br-sm"
+                     style="background-image: url(assets/images/slides/slide01.png); background-color: #D9E0E6;">
+                    <div class="banner-content y-50">
+                        <div class="slide-animate" data-animation-options="{
+                                                'name': 'fadeInUpShorter', 'duration': '1s','delay':'.3s'
+                                                }">
+                            <h3 class="banner-subtitle text-dark font-weight-normal">
+                                Premium
+                            </h3>
+                            <h2 class="banner-title text-dark text-uppercase ls-25">
+                                Chess Sets
+                            </h2>
+                            <h4 class="banner-price-info text-uppercase font-weight-bold ls-25">
+                                Start at <span class="text-secondary ls-25">€165.00</span>
+                            </h4>
+                            <p class="text-dark font-weight-normal">
+                                Get Plus Discount at Chess Shop
+                            </p>
+                            <a href="demo13-shop.html"
+                               class="btn btn-outline btn-dark btn-rounded btn-icon-right">
+                                Shop Now
+                                <i class="w-icon-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Intro Slide 1 -->
+                <div class="swiper-slide banner banner-fixed intro-slide intro-slide2 br-sm"
+                     style="background-image: url(assets/images/slides/slide02.png); background-color: #D8D8D8;">
+                    <div class="banner-content y-50 text-right">
+                        <div class="slide-animate" data-animation-options="{
+                                                'name': 'fadeInUpShorter', 'duration': '1s','delay':'.3s'
+                                                }">
+                            <h3 class="banner-subtitle text-dark text-uppercase font-weight-normal lh-1">
+                                Custom Handmade
+                            </h3>
+                            <h2 class="banner-title text-dark text-uppercase ls-25">Chess Tables</h2>
+                            <p class="text-default text-uppercase font-weight-bold mb-1">
+                                Walnut / Chestnut
+                            </p>
+                            <h4 class="banner-price-info text-secondary text-uppercase font-weight-bolder lh-1">
+                                <sup>€</sup>430<sup>99</sup>
+                            </h4>
+                            <a href="demo13-shop.html" class="btn btn-outline btn-dark btn-rounded">
+                                Start Buying
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Intro Slide 2 -->
+                <div class="swiper-slide banner banner-fixed intro-slide intro-slide3 br-sm"
+                     style="background-image: url(assets/images/slides/slide03.png); background-color: #EAEAEA;">
+                    <div class="banner-content y-50">
+                        <div class="slide-animate" data-animation-options="{
+                                                'name': 'fadeInUpShorter', 'duration': '1s','delay':'.3s'
+                                                }">
+                            <h3 class="banner-subtitle text-default font-weight-normal">
+                                Stylish Apparel
+                            </h3>
+                            <h2 class="banner-title text-dark text-uppercase ls-25">
+                                Chess Hoodie
+                            </h2>
+                            <h4 class="banner-price-info font-weight-bold ls-25">
+                                Save up to <span class="text-secondary ls-25">30% OFF</span>
+                            </h4>
+                            <p class="text-default font-weight-normal ml-0">
+                                Free returns extended to
+                                30 days after delivery
+                            </p>
+                            <a href="demo13-shop.html"
+                               class="btn btn-outline btn-dark btn-rounded btn-icon-right ml-0">
+                                Shop Now
+                                <i class="w-icon-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Intro Slide 3 -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="grid-item grid-item2 banner col-lg-4 col-md-6 height-x2 overlay-zoom overlay-light">
+        <figure class="banner-media br-sm">
+            <img src="assets/images/demos/demo13/banner/banner-1.jpg" alt="Intro Banner" width="498"
+                 height="325" style="background-color: #D9D9D9;">
+        </figure>
+        <div class="banner-content">
+            <h3 class="banner-title text-capitalize font-weight-bold">New Collection</h3>
+            <h5 class="banner-price-info text-default text-uppercase font-weight-normal ls-25">
+                Up to
+                <span class="text-secondary">35% OFF</span>
+            </h5>
+            <a href="demo13-shop.html" class="btn btn-white br-xs">
+                Shop Now
+            </a>
+        </div>
+    </div>
+    <div class="grid-item grid-item5 banner col-lg-4 col-md-6 height-x2 overlay-zoom overlay-light">
+        <figure class="banner-media br-sm">
+            <img src="assets/images/demos/demo13/banner/banner-4.jpg" alt="category" width="498"
+                 height="325" style="background-color: #272526;">
+        </figure>
+        <div class="banner-content x-50 y-50 text-center pl-4 pr-4">
+            <h5 class="banner-price-info text-primary text-capitalize font-weight-bold">
+                Get 30% off
+                Your Entire Order!
+            </h5>
+            <h3 class="banner-title text-white text-uppercase ls-25">Black Friday Sale</h3>
+            <p class="text-center font-weight-normal">
+                Use code
+                <strong class="text-white text-uppercase">Blkfri40</strong>
+                at checkout.
+            </p>
+            <a href="demo13-shop.html"
+               class="btn btn-primary btn-outline btn-rounded btn-icon-right text-white">
+                Shop Now
+                <i class="w-icon-long-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="grid-item grid-item3 banner col-lg-4 col-md-6 height-x1 overlay-zoom overlay-light">
+        <figure class="banner-media br-sm">
+            <img src="assets/images/demos/demo13/banner/banner-2.jpg" alt="Intro Banner" width="499"
+                 height="210" style="background-color: #0E0F10;">
+        </figure>
+        <div class="banner-content y-50">
+            <h4 class="banner-subtitle text-lighter text-uppercase">Under Favorable</h4>
+            <h3 class="banner-title text-white mb-5">Smartwatches</h3>
+            <h5 class="banner-price-info text-white font-weight-bold mb-0 ls-25">
+                <span class="text-uppercase font-size-normal font-weight-normal ls-normal">From</span>
+                <sup class="font-weight-bold">$</sup>199<sup class="font-weight-bold">00</sup>
+            </h5>
+        </div>
+    </div>
+    <div class="grid-item grid-item4 banner col-lg-4 col-md-6 height-x1 overlay-zoom overlay-light">
+        <figure class="banner-media br-sm">
+            <img src="assets/images/demos/demo13/banner/banner-3.jpg" alt="Intro Banner" width="490"
+                 height="210" style="background-color: #EBEBEB;">
+        </figure>
+        <div class="banner-content y-50">
+            <h4 class="banner-subtitle text-default text-uppercase font-weight-bold">
+                New Collection
+            </h4>
+            <h3 class="banner-title text-capitalize">Accessories</h3>
+            <hr class="divider">
+            <a href="demo13-shop.html" class="btn btn-dark btn-link btn-underline btn-icon-right">
+                Shop Now
+                <i class="w-icon-long-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="grid-space col-1"></div>
 </div>
+<br />
+<!-- End of Intro Banner Group -->
