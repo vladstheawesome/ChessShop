@@ -60,9 +60,36 @@
                 <div class="sidebar-content left-sidebar-content scrollable">
                     <div class="dropdown category-dropdown bg-white sticky-sidebar"
                          data-sticky-options="{'minWidth': 1199, 'padding': {'top': 0}, 'paddingOffsetTop': 0}">
-                        <a href="demo13.html" class="sidebar-logo bg-white d-block after-none">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="sidebar-logo bg-white d-block after-none">
                             <img src="assets/images/ChessShop_LOGO_01.png" alt="logo" width="145" height="45" />
                         </a>
+                        <h3 class="d-block text-dark font-weight-bolder dropdown-title pb-0 mb-0">Admin Menu [WIP]</h3>
+                        <div class="dropdown-box text-default">
+                            <ul class="menu vertical-menu category-menu">
+                                <li>
+                                    <a asp-area="" asp-controller="Admin" asp-action="Index">
+                                        <i class="w-icon-computer"></i>Dashboard
+                                        <span class="submenu-toggle-btn"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-area="" asp-controller="Category" asp-action="Index">
+                                        <i class="w-icon-category"></i>Category
+                                        <span class="submenu-toggle-btn"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-area="" asp-controller="Product" asp-action="Index">
+                                        <i class="w-icon-products"></i>Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-area="" asp-controller="ApplicationType" asp-action="Index">
+                                        <i class="w-icon-bars"></i>Application Type
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <h3 class="d-block text-dark font-weight-bolder dropdown-title pb-0 mb-0">Departments</h3>
                         <div class="dropdown-box text-default">
                             <ul class="menu vertical-menu category-menu">
@@ -837,7 +864,7 @@
                             <div class="row">
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="widget widget-about">
-                                        <a href="demo13.html" class="logo-footer">
+                                        <a asp-area="" asp-controller="Home" asp-action="Index" class="logo-footer">
                                             <img src="assets/images/ChessShop_LOGO.png" alt="logo-footer" width="144"
                                                  height="45" />
                                         </a>
