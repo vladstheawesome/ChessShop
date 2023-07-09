@@ -6,6 +6,7 @@ namespace ChessShop.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["PageTitle"] = "Dashboard";
             return View();
         }
     }

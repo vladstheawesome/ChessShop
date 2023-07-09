@@ -2,74 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
-    ViewData["Title"] = "Category Page";
 }
-<h4>@ViewData["Title"]</h4>
 
-<div class="banner-product-wrapper appear-animate row mb-8">
 
-    @*<partial name="~/Views/Shared/_AdminMenu.cshtml" />*@
-
-    <div class="col-xl-5col4 col-md-8 mb-4">
-        <div class="banner br-sm mb-4" style="background-color: #EEF0EF;">
-            <div class="banner-content d-block d-lg-flex align-items-center">
-                <div class="content-left mr-auto">
-                    <h2 class="title ls-normal mb-0">
-                        @ViewData["Title"]
-                    </h2>
-                </div>
-                <a asp-controller="Category" asp-action="Create" class=" btn-primary btn "
-                   style="margin-right: 80px;">
-                    <i class="w-icon-plus"></i> &nbsp; Add New
-                </a>
-            </div>
-        </div>
-        <!-- End of Banner -->
-        <div class="swiper-container swiper-theme">
-            <div class="swiper-wrapper row cols-xl-4 cols-lg-3">
-                @*Table goes here*@
-
-                @if (Model.Count() > 0)
-                {
-                    <table class="trademart-table">
-                        <thead class="trademart-table-thead">
-                            <tr>
-                                <th class="trademart-table-header">Name</th>
-                                <th class="trademart-table-header">Order #</th>
-                                <th class="trademart-table-header">Created Time</th>
-                                <th class="trademart-table-header">Edited By</th>
-                                <th class="trademart-table-header">Last Modified</th>
-                                <th class="trademart-table-header"></th>
-                                <th class="trademart-table-header"></th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            @foreach (var obj in Model)
-                            {
-                                <tr>
-                                    <td class="trademart-table-row">@obj.name</td>
-                                    <td class="trademart-table-row">@obj.displayorder</td>
-                                    <td class="trademart-table-row">@obj.createdtime</td>
-                                    <td class="trademart-table-row">@obj.lastusername</td>
-                                    <td class="trademart-table-row">@obj.modifiedtime</td>
-                                    <td class="trademart-table-row trademart-last-column text-center"><a asp-controller="Category" asp-route-Id="@obj.categoryid" asp-action="Edit" class="btn btn-sm btn-primary"><i class="far fa-edit"></i></a></td>
-                                    <td class="trademart-table-row trademart-last-column text-center"><a asp-controller="Category" asp-route-Id="@obj.categoryid" asp-action="Delete" class="btn btn-sm btn-secondary"><i class="far fa-trash-alt"></i></a></td>
-                                </tr>
-                            }
-                        </tbody>
-
-                    </table>
-                }
-                else
-                {
-                    <p>No Category!</p>
-                }
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <!-- End of Swiper -->
-    </div>
-</div>
 
