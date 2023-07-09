@@ -14,6 +14,7 @@ namespace ChessShop.Controllers
         public IActionResult Index()
         {
 			ViewData["PageTitle"] = "Category";
+            ViewData["TableTitle"] = "Categories";
 			IEnumerable<Category> objList = _db.Category;
             return View(objList);
         }
