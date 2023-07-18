@@ -22,7 +22,9 @@ namespace ChessShop.Controllers
         // GET
         public IActionResult Create()
         {
-            return View();
+            ViewData["PageTitle"] = "Category / Create";
+			ViewData["TableTitle"] = "Add Category";
+			return View();
         }
 
         // POST
@@ -30,9 +32,18 @@ namespace ChessShop.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
+            obj.createdtime = DateTime.UtcNow;
+            obj.modifiedtime = DateTime.UtcNow;
+
+            //TODO: Temporary testing entries
+            // to be fixed after login/session implementation
+            obj.categoryid = Guid.NewGuid();
+            obj.lastuser = Guid.Empty;
+            obj.inuse = 1;
+            obj.code = 4000;
+
             if (ModelState.IsValid)
             {
-                obj.createdtime = DateTime.UtcNow;
                 _db.Category.Add(obj);
                 _db.SaveChanges();
                 return RedirectToAction("Index");

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace ChessShop.Models
 {
@@ -6,9 +7,15 @@ namespace ChessShop.Models
     {
         [Key]
         public Guid categoryid { get; set; }
+
+        [DisplayName("Name")]
         public string name { get; set; }
-        public int displayorder { get; set; }  
+
+        [DisplayName("Display Order")] //Note: CodeLens disabled
+        public int displayorder { get; set; }
+        
         public decimal code { get; set; }
+
         public Guid? lastuser { get; set; }
 
         [StringLength(50)]

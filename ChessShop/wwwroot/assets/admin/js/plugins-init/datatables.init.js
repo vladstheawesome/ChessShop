@@ -186,7 +186,7 @@ let dataSet = [
         lengthChange:false ,
 		language: {
 			paginate: {
-				next: '<i class="fa-solid fa-angle-right"></i>',
+				next: '<i class="w-icon-angle-right"></i>',
 				previous: '<i class="fa-solid fa-angle-left"></i>' 
 			}
 			

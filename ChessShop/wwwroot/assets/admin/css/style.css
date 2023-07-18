@@ -60,8 +60,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
 @import url("./../icons/simple-line-icons/css/simple-line-icons.css");
-@import url("./../icons/fontawesome6/css/all.min.css");
-@import url("./../icons/fontawesome/css/all.min.css");
+@import url("~/assets/admin/icons/fontawesome6/css/all.min.css");
+@import url("~/assets/admin/icons/fontawesome/css/all.min.css");
 @import url("./../icons/material-design-iconic-font/css/materialdesignicons.min.css");
 @import url("./../icons/themify-icons/css/themify-icons.css");
 @import url("./../icons/line-awesome/css/line-awesome.min.css");
@@ -29944,14 +29944,14 @@ table.tickettable thead th {
 .dataTablemarket .dataTables_wrapper .dataTables_paginate {
   margin-bottom: 0; }
 
-.dataTablemarket .dataTables_wrapper .sorting_asc {
-  background-image: unset; }
+/*.dataTablemarket .dataTables_wrapper .sorting_asc {*/
+  /*background-image: unset;*/ /*}
 
-.dataTablemarket .dataTables_wrapper .sorting {
-  background-image: unset; }
+.dataTablemarket .dataTables_wrapper .sorting {*/
+  /*background-image: unset;*/ /*}
 
-.table.dataTable thead .sorting_desc {
-  background-image: unset; }
+.table.dataTable thead .sorting_desc {*/
+  /*background-image: unset;*/ /*}*/
 
 table.dataTable thead .sorting:after,
 table.dataTable thead .sorting_desc:after,
@@ -29964,7 +29964,7 @@ table.dataTable thead .sorting_asc:after {
   font-size: calc(100% - 4px);
   opacity: 0.5; }
 
-table.dataTable thead .sorting:after {
+/*table.dataTable thead .sorting:after {
   content: "\f0dc"; }
 
 table.dataTable thead .sorting_asc:after {
@@ -29973,19 +29973,20 @@ table.dataTable thead .sorting_asc:after {
 
 table.dataTable thead .sorting_desc:after {
   content: "\f0dd";
-  opacity: 1; }
+  opacity: 1; }*/
 
 .order-tbl td {
   padding: 0.5375rem 0.625rem; }
 
-table.dataTable thead .sorting {
-  background-image: none; }
+/*table.dataTable thead .sorting {
+    background-image: none;
+}
 
 table.dataTable thead .sorting_desc {
   background-image: none; }
 
 table.dataTable thead .sorting_asc {
-  background-image: none; }
+  background-image: none; }*/
 
 #example2_wrapper #example2_filter {
   float: left; }
